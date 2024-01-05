@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">الرئيسية</a> 
+                <a href="Palestine.html">قضية فلسطين</a> 
+                <a href="contact.html"> اتصل بنا</a> 
+                <img src="./mode.png" width="30px" alt="images" onclick="toggleMode()" id="mode">
+            </li>
+        </ul>
+    </nav>
+    <main>
+        
+        <div class="content">
+            <h1 class="main-title">I am Mahmoud Abdelkarim i am front-end Developer</h1>
+            <div class="content-text">
+                <q>لقد شرعت في تنفيذ هذا العمل البسيط بهدف نشر فيديوهات المجاهدين نظرا لان سياسة الفيسبوك الحقيرة تمنع مثل هذه الفيديوهات  كما ان التيليجرام حجب قناة المجاهدين  لمن يستخدم التطبيق من جوجل بلاي او متجر التطبيقات وايضا جوجل درايف يمنع مشاركة هذه الفيديوهات  وايضا للتعريف بالقضية الفلسطينية قدر المستطاع  والله المستعان . <br> إن اخطأت فمن نفسي و ان اصبت فمن الله و صلِ اللهم وسلم وبارك علي سيدنا محمد وعلي آله وصحبه وسلم . </q><br> <p>محمود عبدالكريم</p> 
+            </div>
+            <h3>يمكنك التواصل معي إن كان لديك طريقة تخزين ومشاركة الفيديوهات بدون قيود عن طريق :</h3>
+            <div class="icons">
+                <div>
+                    <img src="./linkedin.png" alt="LinkedIn" width="40px">
+                    <a href="https://www.linkedin.com/in/mahmoud-abdelkarim-%F0%9F%87%B5%F0%9F%87%B8-487452229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+                </div>
+                <div>
+                    <img src="./facebook.png" alt="Facebook" width="40px">
+                    <a href="https://www.facebook.com/profile.php?id=100010632494500">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="photo main-title">
+            <img src="./me.png" alt="mt photo" >
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h4> Copyrights are reserved by Eng/Mahmoud Abdelkarim 2023 &copy;</h4>
+        </div>
+    </footer>
+    <img id="scrollToTopBtn" src="./rocket.png" alt="rocket" onclick="scrollToTop()">
+    <script>
+            window.onscroll = function() {
+                scrollFunction();
+            };
+            function scrollFunction() {
+                var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+                if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+                    scrollToTopBtn.style.display = "block";
+                    } 
+                    else{
+                            scrollToTopBtn.style.display = "none";
+                        }
+            }
+            function scrollToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+            function toggleMode() {
+            // Toggle the dark-mode class on the body element
+            document.body.classList.toggle('dark-mode');
+
+            // Save the current mode preference in local storage
+            const darkModeEnabled = document.body.classList.contains('dark-mode');
+            localStorage.setItem('darkModeEnabled', darkModeEnabled);
+        }
+
+        // Check for user's preference in local storage on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const darkModeEnabled = localStorage.getItem('darkModeEnabled') === 'true';
+
+            // Set the initial mode based on user's preference
+            if (darkModeEnabled) {
+                document.body.classList.add('dark-mode');
+            }
+        });
+</script>
+</body>
+</html>
