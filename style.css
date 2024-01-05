@@ -127,7 +127,7 @@ main .groups{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 4rem;
     padding: 10px;
 }
 main .groups video{
