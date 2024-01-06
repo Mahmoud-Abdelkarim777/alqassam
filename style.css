@@ -127,7 +127,7 @@ main .groups{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 4rem;
+    gap: 2rem;
     padding: 10px;
 }
 main .groups video{
@@ -324,7 +324,10 @@ footer{
     font-size: 30px;
     width: fit-content;
     position: relative;
-    z-index: 1;transition: 0.3s;
+    z-index: 1;
+    transition: 0.3s;
+    background-color: var(--background-color-navbar);
+    color: var(--text-color-navbar);
 }
 .dark-mode .main-title{
     margin: 10px auto;
@@ -333,7 +336,10 @@ footer{
     font-size: 30px;
     width: fit-content;
     position: relative;
-    z-index: 1;transition: 0.3s;
+    z-index: 1;
+    transition: 0.3s;
+    background-color: var(--main-background-color);
+    color: var(--background-color-navbar);
 }
 .main-title::before,
 .main-title::after{
