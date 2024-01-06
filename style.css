@@ -289,7 +289,7 @@ footer{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: .5rem;
+        gap: 2.5 rem;
         justify-content: space-around;
     }
     a{
