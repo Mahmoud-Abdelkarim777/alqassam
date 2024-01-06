@@ -138,12 +138,8 @@ footer{
     animation: shake 0.5s ease-in-out infinite; /* تطبيق الهتزاز */
 }
 #mode{
-    /* position: fixed; */
-    /* top: 60px; */
-    /* right: 0px; */
     background-color: white;
     border: none;
-    /* padding: 2px; */
     border-radius: 50%;
     cursor: pointer;
 }
@@ -169,6 +165,7 @@ footer{
     nav ul li{
         display: flex;
         flex-direction: row;
+        align-items: center;
         gap: 1rem;
     }
     nav ul li a{
