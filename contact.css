@@ -238,6 +238,8 @@ footer{
     width: fit-content;
     position: relative;
     z-index: 1;transition: 0.3s;
+    background-color: var(--background-color-navbar);
+    color: var(--text-color-navbar);
 }
 .dark-mode .main-title{
     margin: 10px auto;
@@ -247,6 +249,8 @@ footer{
     width: fit-content;
     position: relative;
     z-index: 1;transition: 0.3s;
+    background-color: var(--main-background-color);
+    color: var(--background-color-navbar);
 }
 .main-title::before,
 .main-title::after{
