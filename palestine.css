@@ -255,10 +255,10 @@ footer{
     transform: translateY(-50%);
 }
 .main-title::before{
-    left: -20px;
+    left: 0 px;
 }
 .main-title::after{
-    right: -20px;
+    right: 0 px;
 }
 .main-title:hover::before{
     z-index: -1;
